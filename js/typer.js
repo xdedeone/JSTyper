@@ -92,7 +92,7 @@ function onKeyDown(event) {
 
         typeInput.value = [
             ...previousWord.querySelectorAll("char.correct, char.incorrect")
-        ].map(el => { return el.classList.contains("correct") ? el.innerText : "-"})
+        ].map(el => { return el.classList.contains("correct") ? el.innerText : "*"})
         .join("")
     }
 }
